@@ -1,23 +1,64 @@
 # Front End Web Development
-## General Assembly
+#### General Assembly
 
-### Topics covered
+# Week 1 - Lesson 1
 
-#### HTML
-- Box Model
-- Basic tags
-- Block tags
- - Inline tags
-#### CSS
-- Selectors
-- CSS Specificity
-- Flexbox
-- Grid
-- CSS frameworks
-#### Javascript
-- Variables
-    - Types
-- Arrays
-- Objects
-- Functions
+## Installing all tools and dependencies
 
+### 1. IDE (integrated development environment)
+For this course we'll be using ***[VS Code](https://code.visualstudio.com/)*** (Visual studio Code). You can download it and installing usong the following **[link](https://code.visualstudio.com/)**, the browser will automatically detect your OS and will give the you a button to download the appropiate installer.
+
+### For Mac users
+> 1. Download Visual Studio Code for macOS.
+> 2. Open the browser's download list and locate the downloaded app or archive.
+> 3. If archive, extract the archive contents. Use double-click for some browsers or select the 'magnifying glass' icon with Safari.
+> 4. Drag Visual Studio Code.app to the Applications folder, making it available in the macOS Launchpad.
+> 5. Open VS Code from the Applications folder, by double clicking the icon.
+> 6. Add VS Code to your Dock by right-clicking on the icon, located in the Dock, to bring up the context menu and choosing Options, Keep in Dock.
+
+### Launching from the command line (It's a simple command we'll use from the terminal to run VSC)
+> 1. Launch VS Code.
+> 2. Open the Command Palette `(Cmd+Shift+P)` and type '***shell command***' to find the Shell Command: ***Install 'code' command in PATH*** command.
+>
+> ![Shell command](https://code.visualstudio.com/assets/docs/setup/mac/shell-command.png)
+> 
+> 3. Restart the terminal for the new `$PATH` value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder.
+
+### For Windows Users
+> 1. Download the Visual Studio Code installer for Windows.
+> 2. Once it is downloaded, run the installer (VSCodeUserSetup-{version}.exe). This will only take a minute.
+> 3. By default, VS Code is installed under `C:\Users\{Username}\AppData\Local\Programs\Microsoft VS Code`.
+
+### VSCode Extensions
+VS Code extensions let you add languages, debuggers, and tools to your installation to support your development workflow. For this course we'll be using specific extensions that will make our workflow easier and faster, though these extensions are optionals, I recommend you install them, so that you can easily follow keyboard shortodes and other commands.
+
+> You can browse and install extensions from within VS Code. Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the View: Extensions command `(⇧⌘X)` on Mac or `(⇧+CTRL+X)` on Windows.
+>
+> ![Extensions Icon](https://code.visualstudio.com/assets/docs/editor/extension-marketplace/extensions-view-icon.png)
+> 
+> This will show you a list of the most popular VS Code extensions on the VS Code Marketplace.
+> ![Extensions Marketplace](https://code.visualstudio.com/assets/docs/editor/extension-marketplace/extensions-popular.png)
+> Each extension in the list includes a brief description, the publisher, the download count, and a five star rating. You can select the extension item to display the extension's details page where you can learn more.
+
+#### Installing an extension
+> To install an extension, select the **Install** button. Once the installation is complete, the **Install** button will change to the **Manage** gear button.
+
+We'll install the following extensions:
+
+> 1. **ES7+React/Redux/React-Native snippets** by *dsznajder*
+> 2. **ESLint** by *Microsoft*
+> 3. **Live Server Preview** by *negokaz*
+> 4. **Prettier** by *Prettier*
+
+:boom: And now we've got our IDE ready to start working! :boom:
+
+### 2. Git
+#### What is Git? A very quick introduction
+By far, the most widely used modern version control system in the world today is Git. Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel. A staggering number of software projects rely on Git for version control, including commercial projects as well as open source. Developers who have worked with Git are well represented in the pool of available software development talent and it works well on a wide range of operating systems and IDEs (Integrated Development Environments).
+
+#### How we'll use Git during this course?
+During this course, we'll use git to access resourses, hand out homeworks, version control our final project, collaborate with classmates, and finally we'll have a reference and portfolio repository for our work.
+
+#### Installing git on our local machines
+##### Mac Users
+To install Git on our Mac computer we'll first need to isntall ***[Homebrew](https://brew.sh/)***. Homebrew is a package manager for Mac, we'll also use it to install other dependencies for our projects :smile:
