@@ -50,7 +50,7 @@ We'll install the following extensions:
 > 3. **Live Server Preview** by *negokaz*
 > 4. **Prettier** by *Prettier*
 
-:boom: And now we've got our IDE ready to start working! :boom:
+:tada: And now we've got our IDE ready to start working! :tada:
 
 ### 2. Git
 #### What is Git? A very quick introduction
@@ -59,6 +59,45 @@ By far, the most widely used modern version control system in the world today is
 #### How we'll use Git during this course?
 During this course, we'll use git to access resourses, hand out homeworks, version control our final project, collaborate with classmates, and finally we'll have a reference and portfolio repository for our work.
 
-#### Installing git on our local machines
+#### Installing Git on our local machines
 ##### Mac Users
 To install Git on our Mac computer we'll first need to isntall ***[Homebrew](https://brew.sh/)***. Homebrew is a package manager for Mac, we'll also use it to install other dependencies for our projects :smile:
+#### How to install Homebrew
+> 1. Open a Terminal window
+> 2. Copy and paste the following code:
+>> `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+> 3. The script explains what it will do and then pauses before it does it. We'll use all the default options
+> 4. Close the terminal window, re-open it and test the installation using the `brew --version` command.
+> 5. The output should be something like `Homebrew 4.0.28`
+
+#### Troubleshooting :rotating_light:
+If the `brew` command returned an error, we'll need to follow these commands:
+> 1. Let's make sure w're on our home directory by writing the following command on our terminal
+>> `cd ~`
+> 2. Make sure the file `.zshrc` does not exist using
+>> `ls -a` this will list all of the files and folders in our home directory
+> 3. if the file does not exist, we'll create it by using: (skip this step if the file is present)
+>> `touch .zshrc`
+> 4. We need to tell our system how to use brew. Into the terminal paste the following command:
+>> `echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc`
+
+:white_check_mark: :white_check_mark: Now that Homebre is installed we can proceed with the Git installation. 
+
+#### How to install Git
+The Git isntallation is very straightforward, we just need to run the following command in out terminal:
+>`brew install git`
+
+---
+##### Windows Users
+> 1. Visit the [Donloads page](https://git-scm.com/downloads) of the Git project website
+> 2. Download the appropiate OS Standalone Installer (64 or 32-bit version)
+> 3. Run the installation wizzard, we'll use the default options unless you require otherwise
+
+**Please note** that for this course we won't use the default Windows command line or PowerShell, every time we'll use terminal we will use the Git command line, this way we'll make sure that we can use linux commands on Windows, that otherwise won't be available to us.
+
+:tada: Now that Git is installed le's move to the next step
+
+### 3. Node.js
+Once we advance on the content of this course, we'll require Node to be installed on our local machines. We'll require node to create React applications, use it for CSS preprocessors, and to Run Javascript Based Servers.
+
+To get Node up and running we'll use NVM (Node Version Manager)m this will allow us to have multiple versions of Node in our machines, and be able to switch between them easily.
