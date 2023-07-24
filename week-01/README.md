@@ -101,3 +101,24 @@ The Git isntallation is very straightforward, we just need to run the following 
 Once we advance on the content of this course, we'll require Node to be installed on our local machines. We'll require node to create React applications, use it for CSS preprocessors, and to Run Javascript Based Servers.
 
 To get Node up and running we'll use NVM (Node Version Manager)m this will allow us to have multiple versions of Node in our machines, and be able to switch between them easily.
+
+#### For Mac Users
+
+#### For Windows users
+
+### 4. SHH Key pair
+
+# Week 1 - Lesson 2
+## HTML basics
+
+### Regular tags
+
+### Self closing tags
+
+### Attributes
+
+### Document Head
+
+### Document Body
+
+### Common Body tags
