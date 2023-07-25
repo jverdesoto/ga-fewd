@@ -111,10 +111,10 @@ To get Node up and running we'll use NVM (Node Version Manager)m this will allow
 >> Edit the .zshrc file by using `sudo nano .zshrc`
 >> at the end of the file paste the following commands:
 >>> ```shell
-    export NVM_DIR="$HOME/.nvm"`
-    [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
-    [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-    ```
+>>> export NVM_DIR="$HOME/.nvm"`
+>>> [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+>>> [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+>>> ```
 > 4. We'll need to restart our terminal, type `exit` close the window and reopen a terminal window.
 > 5. Test that NVM was installed correctly by typong `nvm -v` the output should be the version number.
 
