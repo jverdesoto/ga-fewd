@@ -103,10 +103,100 @@ Once we advance on the content of this course, we'll require Node to be installe
 To get Node up and running we'll use NVM (Node Version Manager)m this will allow us to have multiple versions of Node in our machines, and be able to switch between them easily.
 
 #### For Mac Users
+##### 1. Install NVM using Homebrew
+> 1. In a terminal window, first let's make sure we're on our home directory by typing `cd ~`
+> 2. Paste the following command:
+    > `brew install nvm`
+> 3. Once installed, we need to teach our teminal the `nvm` command
+    > Edit the .zshrc file by using `sudo nano .zshrc`
+    > at the end of the file paste the following commands:
+        > `export NVM_DIR="$HOME/.nvm"`
+        > `[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm`
+        > `[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion`
+> 4. We'll need to restart our terminal, type `exit` close the window and reopen a terminal window.
+> 5. Test that NVM was installed correctly by typong `nvm -v` the output should be the version number.
+
+##### 2. Install Node using NVM
+It's alwas recommended to use LTS (**L**ong **T**erm **S**upport) versions for our projects, to view all available releases visit the [Nodejs official website](https://nodejs.org/en/download/releases).
+
+For this excercise we'll use the *Hydrogen* and *Gallium* versions. To install them, in your terminal window type the following commands:
+> `nvm install 18.17.0` this will install the *Hydrogen* version.
+
+Repeat the commend to install *Gallium*
+> `nvm install 16.20.1`
+
+We'll set the default version to 18.17.0, to do this type the following command:
+> `nvm alias default 18.17.0`
+
+We can switch versions with the following command:
+> `nvm use [version number]`
+> Change *[version number]* for the version number you want to use ***eg:*** `nvm use 16.20.1`
+
+Test that node is installed by using:
+> `node -v` the output should be a version number
 
 #### For Windows users
+The process to install Node/NVM in Windows is slightly different than Mac, we'll first install Node on our machine:
+> 1. Visit [Nodejs homepage](https://nodejs.org/en)
+> 2. The website will automatically detect your OS, click on the **LTS** download option
+> 3. Once downloaded, run the installer, and follow the wizard instructions.
+> 4. Run Git Bash as Administrator
+> 5. Test that node is installed by using:
+    > `node -v` the output should be a version number
 
-### 4. SHH Key pair
+Now let's install NVM to manage our versions
+> 1. Visit the [NVM for windows Github repo](https://github.com/coreybutler/nvm-windows)
+> 2. Click on the *Download Now!* button
+> 3. Once downloaded, run the installer, and follow the wizard instructions.
+> 4. Run Git Bash as Administrator
+> 5. Test that node is installed by using:
+    > `nvm -v` the output should be a version number
+
+For this excercise we'll use the *Hydrogen* and *Gallium* versions. To install them, in your terminal window type the following commands:
+> `nvm install 18.17.0` this will install the *Hydrogen* version.
+
+Repeat the commend to install *Gallium*
+> `nvm install 16.20.1`
+
+We'll set the default version to 18.17.0, to do this type the following command:
+> `nvm alias default 18.17.0`
+
+We can switch versions with the following command:
+> `nvm use [version number]`
+> Change *[version number]* for the version number you want to use ***eg:*** `nvm use 16.20.1`
+
+### 4. SHH Key pair & Github
+
+First we need an account in [Github](https://github.com/). If you don't already have one, please create it. You can use SSO
+
+Now in a Terminal window we'll create an ssh key-pair
+> `ssh key-gen`
+
+You'll be promted to write a file name. **Please leave it blank to use the default setting** by hitting *Return*
+
+Next you will be promted to write a passphrase, you can leave it empty or write a password that you'll remember. Bear in mind that in a terminal window, passwords do not move your cursor.
+You'll be asked to re-enter the passphrase
+
+Once the key-pair is created you'll be shown a success message.
+
+Let's navigate to our ssh folder in our Terminal:
+#### Mac Users
+> `cd /Users/yourUserName/.ssh`
+
+#### Windows Users
+> `cd /c/Users/yourUserName/.ssh`
+
+Now let's open the folder up using VSCode
+> `code .`
+
+This command will open VSCode in the .ssh folder
+> 1. Look for the ***id-rsa.pub*** file
+> 2. Copy the contents of the file
+> 3. Go to Github, hover over your profile picture and click on **Settings**
+> 4. Find **SSH and GPG keys** in the right hand side menu
+> 5. Click on **New SSH key**
+> 6. Add a title, and paste the copied code in the *Key* box
+> 7. Save and we're good to go!
 
 # Week 1 - Lesson 2
 ## HTML basics
@@ -122,3 +212,5 @@ To get Node up and running we'll use NVM (Node Version Manager)m this will allow
 ### Document Body
 
 ### Common Body tags
+
+### Basic file structure
