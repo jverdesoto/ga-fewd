@@ -106,13 +106,13 @@ To get Node up and running we'll use NVM (Node Version Manager)m this will allow
 ##### 1. Install NVM using Homebrew
 > 1. In a terminal window, first let's make sure we're on our home directory by typing `cd ~`
 > 2. Paste the following command:
-    > `brew install nvm`
+> `brew install nvm`
 > 3. Once installed, we need to teach our teminal the `nvm` command
-    > Edit the .zshrc file by using `sudo nano .zshrc`
-    > at the end of the file paste the following commands:
-        > `export NVM_DIR="$HOME/.nvm"`
-        > `[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm`
-        > `[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion`
+> Edit the .zshrc file by using `sudo nano .zshrc`
+> at the end of the file paste the following commands:
+> `export NVM_DIR="$HOME/.nvm"`
+> `[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm`
+> `[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion`
 > 4. We'll need to restart our terminal, type `exit` close the window and reopen a terminal window.
 > 5. Test that NVM was installed correctly by typong `nvm -v` the output should be the version number.
 
@@ -142,7 +142,7 @@ The process to install Node/NVM in Windows is slightly different than Mac, we'll
 > 3. Once downloaded, run the installer, and follow the wizard instructions.
 > 4. Run Git Bash as Administrator
 > 5. Test that node is installed by using:
-    > `node -v` the output should be a version number
+> `node -v` the output should be a version number
 
 Now let's install NVM to manage our versions
 > 1. Visit the [NVM for windows Github repo](https://github.com/coreybutler/nvm-windows)
@@ -150,7 +150,7 @@ Now let's install NVM to manage our versions
 > 3. Once downloaded, run the installer, and follow the wizard instructions.
 > 4. Run Git Bash as Administrator
 > 5. Test that node is installed by using:
-    > `nvm -v` the output should be a version number
+> `nvm -v` the output should be a version number
 
 For this excercise we'll use the *Hydrogen* and *Gallium* versions. To install them, in your terminal window type the following commands:
 > `nvm install 18.17.0` this will install the *Hydrogen* version.
