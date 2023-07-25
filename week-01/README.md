@@ -65,7 +65,9 @@ To install Git on our Mac computer we'll first need to isntall ***[Homebrew](htt
 #### How to install Homebrew
 > 1. Open a Terminal window
 > 2. Copy and paste the following code:
->> `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+>> ```shell
+>> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+>> ```
 > 3. The script explains what it will do and then pauses before it does it. We'll use all the default options
 > 4. Close the terminal window, re-open it and test the installation using the `brew --version` command.
 > 5. The output should be something like `Homebrew 4.0.28`
