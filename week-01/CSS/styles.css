@@ -1,0 +1,14 @@
+#rectangle {
+    background-color: blue;
+    height: 150px;
+    width: 150 px;
+}
+.square {
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px color(srgb rgba(255, 0, 0, 0) green blue);
+
+}
