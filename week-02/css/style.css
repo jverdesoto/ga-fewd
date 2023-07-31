@@ -1,0 +1,36 @@
+:root {
+    font-size: 24px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    color: aqua;
+    font-size: 1.5rem; /*  36px */
+}
+
+.title2 {
+    color: pink;
+    font-size: 1.5em; /* 54px */
+}
+
+#thetitle {
+    color: chartreuse;
+    font-size: 1.5em; /* 81px */
+}
+
+h2.title2#thetitle {
+    color: bisque;
+}
+h2 .title2 #thetitle {
+    color: blanchedalmond;
+}
+
+.rectangle {
+    background-color: hsl(29, 70%, 51%);
+    height: 50vw;
+    width: 75vh;
+}
