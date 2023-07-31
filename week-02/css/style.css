@@ -1,0 +1,37 @@
+:root {
+    font-size: 24px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+.title2 {
+    color: pink;
+    font-size: 1.5em;
+}
+
+#thetitle {
+    color: brown;
+    font-size: 1.5em;
+}
+
+h2.title2#thetitle {
+    color: darkgoldenrod;
+}
+
+h2 .title2 #thetitle {
+    color: green;
+}
+
+.rectangle {
+    background-color: aqua;
+    height: 300px;
+    width: 75%;
+}
