@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+
 :root {
     font-size: 24px;
 }
@@ -5,6 +8,12 @@
 body {
     background-color: black;
     color: white;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 82px;
 }
 
 h2 {
@@ -30,7 +39,41 @@ h2 .title2 #thetitle {
 }
 
 .rectangle {
-    background-color: hsl(29, 70%, 51%);
-    height: 50vw;
-    width: 75vh;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+
+.sq1 {
+    background-color: beige;
+    height: 350px;
+    width: 350px;
+    position: relative;
+}
+.sq2 {
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.sq3 {
+    background-color: brown;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.sq4 {
+    background-color: cornflowerblue;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
 }
