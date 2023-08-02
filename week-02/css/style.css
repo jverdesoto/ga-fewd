@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
 :root {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: beige;
+    color: blue;
+    font-family: 'Lato', sans-serif;
+}
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    background-color: burlywood;
+
 }
 
 h2 {
-    color: aqua;
+    color: brown;
     font-size: 1.5rem;
 }
 
@@ -31,7 +42,53 @@ h2 .title2 #thetitle {
 }
 
 .rectangle {
-    background-color: aqua;
+    background-color:green;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+
+.sq1 {
+    background-color: beige;
+    height: 600px;
+    width: 500px;
+    position: absolute;
+
+}
+.sq2 {
+    background-color: blue;
     height: 300px;
-    width: 75%;
+    width: 300px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+.sq3 {
+    background-color: brown;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+}
+.sq4 {
+    background-color: cornflowerblue;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+}
+
+.granny {
+    height: 500px;
+    width: 400px;
+    
+}
+
+.cookies {
+    height: 500px;
+    width: 500px;
 }
