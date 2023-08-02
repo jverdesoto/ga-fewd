@@ -1,33 +1,38 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100&display=swap);
 :root {
     font-size: 12px;
 }
 
 Body {
-    background-color: black;
-    color: white;
+    background-color:rgb(209, 207, 200);
+    color: rgb(64, 74, 76);
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
 }
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 82px;
+  background-color: bisque;
+  padding: 10px;
+  text-align: center;
+}
+
 
 h2 {
-   color: aqua;
-   font-size: 1.5rem; /* 36px */
-
+  font-family: 'Quicksand', sans-serif;
 }
 
-  .title2 {
-    color: pink;
-    font-size: 1.5em;
-  }  
 
-  #thetitle {
-    color: chartreuse;
-  }
+h1, h2, h3,h4 {
+  color: brown;
+}
 
-  h2.title2#thetitle {
-    color: bisque;
-  }
 
-  .rectangle {
-    background-color: #ff9900;
-    height: 50vh;
-    width: 75vw;
-  }
+
+
+
+ 
+
+   
