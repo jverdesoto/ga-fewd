@@ -1,11 +1,20 @@
-#rectangle {
-    background-color: blue;
-    height: 150px;
-    width: 350px;
+.square-A {
+    background-color: aqua;
+    height: 750px;
+    width: 750px;
 }
-.square {
-    background-color: green;
-    height: 150px;
-    width: 150px;
-    
+.square-B {
+    background-color: blue;
+    height: 50%;
+    width: 50%;
+}
+.square-C {
+    background-color: blueviolet;
+    height: 50%;
+    width: 50%;
+}
+.square-D {
+    background-color: brown;
+    height: 50%;
+    width: 50%;
 }
