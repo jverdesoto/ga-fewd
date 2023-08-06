@@ -1,31 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Montserrat:wght@300&family=Noto+Kufi+Arabic:wght@600&display=swap');
+
 :root {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 body {
     background-color: black;
-    color: white;
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    background-color: purple;
+
 }
 
 h2 {
-    color: aqua;
+    color: oldlace;
     font-size: 1.5rem;
 }
+
 .title2 {
-    color: pink;
-    font-size: 1.5rem;
+    color: blueviolet;
+    font-size: 1.5em;
 }
+
 #thetitle {
-    color: darkviolet;
+    color: yellow;
+    font-size: 1.5em;
 }
+
 h2.title2#thetitle {
-    color: darkred;
+    color: red;
 }
+
 h2 .title2 #thetitle {
-    color: blue;
+    color: green;
 }
+
 .rectangle {
-    background-color: aqua;
-    height: 50vh;
-    width: 75vw;
+    background-color:green;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+
+.square1 {
+    background-color: beige;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+
+}
+.square2 {
+    background-color: rgb(115, 255, 0);
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+.square3 {
+    background-color: rgb(248, 248, 248);
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+.square4 {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    
 }
