@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@300;700&display=swap');
+
+:root {
+    font-size: 14px;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 2.25rem;
+    padding-bottom: 13px;
+}
+h3 {
+    font-size: 2rem;
+    padding-bottom: 13px;
+}
+h4 {
+    font-size: 1.75rem;
+    padding-bottom: 11px;
+}
+h5 {
+    font-size: 1.5rem;
+    padding-bottom: 11px;
+}
+h6 {
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+a, a:visited, a:active {
+    color: #444;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    color: #f90;
+}
+
+ul {
+    padding: 15px, 0, 20px, 25px;
+    list-style: disc;
+}
+
+ul li {
+    list-style: disc;
+    padding-bottom: 10px;
+    padding-left: 7px;
+}
+
+#header {
+    align-items: center;
+    background-color: #000;
+    background-image: url(https://unsplash.it/1920/250);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+#personalInformation {
+    border: #444 1px solid;
+    border-radius: 10px;
+    background-color: #fff4f4;
+    margin: 30px auto;
+    padding: 25px;
+    width: 80%;
+}
+
+#personalInformation .bold {
+    font-weight: 800;
+}
+
+#workExperience, #studies {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#workExperience > .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#workExperience > .container > .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    padding: 20px;
+}
+
+#studies {
+    margin-top: 30px;
+}
+
+#studies ul li {
+    font-size: 1.3rem;
+}
+
+#footer {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
