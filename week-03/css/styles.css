@@ -154,3 +154,50 @@ ul li::before {
     height: 250px;
     width: 100%;
 }
+
+/* Responsive.html */
+
+.containC {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+.content {
+    color: #eee;
+    background-color: black;
+    height: 250px;
+    width: 250px;
+}
+
+
+/* @media only screen and (min-width: 1024px) {
+    .containC {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+ @media only screen and (max-width: 1024px) and (min-width: 781px) {
+    .containC {
+       display: flex;
+       flex-direction: column;
+    }
+ }
+
+ @media only screen and (max-width: 780px) and (min-width: 481px) {
+    .containC {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+ }
+
+ @media only screen and (max-width: 480px) {
+    .containC {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+ }
+    
+
