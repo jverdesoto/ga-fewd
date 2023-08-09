@@ -123,3 +123,36 @@ ul li {
     justify-content: center;
     height: 50px;
 }
+
+/* Responsive.html */
+
+.containC {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.content {
+    background-color: black;
+    height: 250px;
+    width: 250px;
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 781px) {
+    .containC {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 481px) {
+    .containC {
+        flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+        .containC {
+            flex-direction: column-reverse;
+        } 
+    }
