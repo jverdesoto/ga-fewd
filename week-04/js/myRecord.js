@@ -75,10 +75,54 @@ var myFavRecord = [
     }
 ]
 
-for(var i = 0; i < myFavRecord.length; i++) {
- if(myFavRecord[i].duration < 240) {
-    console.log (myFavRecord[i].songTitle)
- }
+// for(var i = 0; i < myFavRecord.length; i++) {
+//  if(myFavRecord[i].duration < 240) {
+//     console.log (myFavRecord[i].songTitle)
+//  }
+
+var col, 
+    card, 
+    cardBody, 
+    songTitle, 
+    composers,
+    duration, 
+    cta
+
+for (var key in myFavRecord) {
+    col = document.createElement ('div')
+    col.classList.add (`col-lg-3`, `col-md-4`, `col-sm-12`, `mb-3`)
+    card = document.createElement('div')
+    card.classList.add ('card')
+    cardBody = document.createElement ('div')
+    cardBody.classList.add('card-body')
+    songTitle = document.createElement ('h5')
+    songTitle.innerHTML = myFavRecord [key].songTitle
+    composers = document.createElement ('h6')
+    composers.innerHTML =myFavRecord[key].authors
+    duration = document.createElement ('p')
+    duration.innerHTML =`<strong> Durtion </strong> ${myFavRecord[key].duration}`
+    
+    cta = document.createElement ('a')
+    cta.classList.add ('btn', 'btn-light')
+    cta.setAttribute ('onClick', `showLyrics(${key})`)
+    cta.innerHTML = 'lyrics'
+
+    
+    cardBody.appendChild(songTitle)
+    cardBody.appendChild(composers)
+    cardBody.appendChild(duration)
+    cardBody.appendChild(cta)
+
+    card.appendChild(cardBody)
+    col.appendChild(card)
+
+
+    document.getElementById ('songs').appendChild (col)
+}
+
+function showLyrics (key){
+    var numKey = parseInt (key)
+    document.getElementById ('lyrics').innerHTML = myFavRecord(num.key).lyrics
 }
 
 
