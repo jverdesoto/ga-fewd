@@ -71,9 +71,54 @@ var myFavRecord = [
     }
 ]
 // only console log songs with fewer than 240 seconds
-for(var i = 0; i < myFavRecord.length; i++) {    
-        if(myFavRecord[i].duration < 240) {
-            console.log(`${myFavRecord[i].trackNum}: Title ${myFavRecord[i].songTitle} - Duration: ${myFavRecord[i].duration}`);
-    }
+// for(var i = 0; i < myFavRecord.length; i++) {    
+//         if(myFavRecord[i].duration < 240) {
+//             console.log(`${myFavRecord[i].trackNum}: Title ${myFavRecord[i].songTitle} - Duration: ${myFavRecord[i].duration}`);
+//     }
+// }
+
+var col,
+    card,
+    cardBody,
+    songTitle,
+    composers,
+    duration,
+    cta
+
+for (var key in myFavRecord) {
+    col = document.createElement('div')
+    col.classList.add('col-lg-3', 'col-md-3', 'col-sm-12', 'nb-3')
+    card = document.createElement('div')
+    card.classList.add('card')
+    cardBody = document.createElement('div')
+    cardBody.classList.add('card-body')
+    songTitle = document.createElement('h5')
+    songTitle.innerHTML = myFavRecord[key].songTitle
+    composers = document.createElement('h6')
+    composers.innerHTML = myFavRecord[key].authors
+    duration = document.createElement('p')
+    duration.innerHTML = `<strong>Duration</strong>: ${myFavRecord[key].duration} seconds`
+    
+    cta = document.createElement('a')
+    cta.classList.add('btn', 'btn-light')
+    cta.setAttribute('href', '#')
+    cta.setAttribute('onClick',`showLyrics(${key})`)
+    cta.innerHTML = 'Lyrics'
+
+    cardBody.appendChild(songTitle)
+    cardBody.appendChild(composers)
+    cardBody.appendChild(duration)
+    cardBody.appendChild(cta)
+
+    card.appendChild(cardBody)
+
+    col.appendChild(card)
+
+    document.getElementById('songs').appendChild(col)
+}
+
+function showLyrics(key) {
+    var numKey = parseInt(key)
+    document.getElementById('lyrics').innerHTML = myFavRecord[numKey].lyrics
 }
 
