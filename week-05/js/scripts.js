@@ -33,7 +33,7 @@ var el,
     pubTime
 
 
-fetch('https://mockend.com/mockend/demo/posts')
+fetch('https://mockend.com/api/mockend/demo/posts')
 .then(response => response.json())
 .then(json => myData(json));
 
