@@ -1,26 +1,3 @@
-var myMockData = [
-    {
-		"body": "Debitis et neque facilis magnam.",
-		"category": "unknown generator",
-		"cover": "https://picsum.photos/seed/8392/1920/1080",
-		"createdAt": "2016-04-19T19:44:19Z",
-		"id": 5,
-		"isDraft": false,
-		"title": "ad impedit sunt",
-		"views": 733
-	},
-	{
-		"body": "Error nisi deserunt consectetur ea a.",
-		"category": "unknown generator",
-		"cover": "https://picsum.photos/seed/9839/1920/1080",
-		"createdAt": "2012-11-14T20:24:23Z",
-		"id": 6,
-		"isDraft": false,
-		"title": "molestias",
-		"views": 151
-	},
-]
-
 var el,
     column,
     card,
@@ -30,6 +7,7 @@ var el,
     cardContent,
     content,
     title,
+    contentP,
     pubTime
 
 
@@ -50,14 +28,37 @@ function myData(obj) {
     
         figure = document.createElement('figure')
         figure.classList.add('image', 'is-4by3')
+
+        cardContent = document.createElement('div')
+        cardContent.classList.add('card-content')
+
+        content = document.createElement('div')
+        content.classList.add('content')
+
+        title = document.createElement('p')
+        title.classList.add('title')
+        title.innerHTML = obj[key].title
+
+        contentP = document.createElement('p')
+        contentP.innerHTML = obj[key].body
+
+        pubTime = document.createElement('time')
+        pubTime.setAttribute('datetime', obj[key].createdAt)
+        pubTime.innerHTML = obj[key].createdAt
     
         img = document.createElement('img')
         img.setAttribute('src', obj[key].cover)
         img.setAttribute('alt', obj[key].title)
     
+        // Appending elements
         figure.appendChild(img)
         cardImage.appendChild(figure)
+        content.appendChild(title)
+        content.appendChild(contentP)
+        content.appendChild(pubTime)
+        cardContent.appendChild(content)
         card.appendChild(cardImage)
+        card.appendChild(cardContent)
         el.appendChild(card)
         document.getElementById('myContent').appendChild(el)
     }
