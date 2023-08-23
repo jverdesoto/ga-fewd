@@ -10,6 +10,7 @@ var el,
     cardContent,
     content,
     title,
+    contentP,
     pubTime,
     myData
 
@@ -30,6 +31,23 @@ function myData(obj) {
     
         figure = document.createElement('figure')
         figure.classList.add('image', 'is-4by3')
+
+        cardContent = document.createElement('div')
+        cardContent.classList.add('card-content')
+
+        content = document.createElement('div')
+        content.classList.add('content')
+
+        title = document.createElement('p')
+        title.classList.add('title')
+        title.innerHTML = obj[key].title
+
+        contentP = document.createElement('p')
+        contentP.innerHTML = obj[key].body
+
+        pubTime = document.createElement('time')
+        pubTime.setAttribute('time', obj[key].createdAt)
+        pubTime.innerHTML = obj[key].createdAt
     
         img = document.createElement('img')
         img.setAttribute('src', obj[key].cover)
@@ -37,7 +55,12 @@ function myData(obj) {
     
         figure.appendChild(img)
         cardImage.appendChild(figure)
+        content.appendChild(title)
+        content.appendChild(contentP)
+        content.appendChild(pubTime)
+        cardContent.appendChild(content)
         card.appendChild(cardImage)
+        card.appendChild(cardContent)
         el.appendChild(card)
     
         document.getElementById('myContent').appendChild(el)
