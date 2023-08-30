@@ -14,27 +14,25 @@ gulp.task('sass', () => {
         .pipe(sass())
         .pipe(cssnano())
         .pipe(gulp.dest('./css'))
- });
+})
 
-gulp.task('js', function () {
-    // set up the browserify instance on a task basis
+gulp.task('js', () => {
     var b = browserify({
-      entries: './assets/app.js',
-      debug: true
-      // defining transforms here will avoid crashing your stream
-    });
-  
+        entries: './assets/app.js',
+        debug: true
+    })
+
     return b.bundle()
-      .pipe(source('app.js'))
-      .pipe(buffer())
-      .pipe(babel())
-      .pipe(uglify())
-      .pipe(gulp.dest('./js'));
-  });
+        .pipe(source('app.js'))
+        .pipe(buffer())
+        .pipe(babel())
+        .pipe(uglify())
+        .pipe(gulp.dest('./js'))
+})
 
 gulp.task('watch', () => {
-    gulp.watch('./assets/**/*.scss', gulp.series('sass'));
-    gulp.watch(['./assets/js/*.js', './assets/app.js'], gulp.series('js'));
-});
+    gulp.watch('./assets/**/*.scss', gulp.series('sass'))
+    gulp.watch(['./assets/js/*.js', './assets/app.js'], gulp.series('js'))
+})
 
-gulp.task('default', gulp.series('js', 'sass'));
+gulp.task('default', gulp.series('js', 'sass'))

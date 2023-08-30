@@ -1,8 +1,8 @@
 {
   "name": "ga-fewd",
   "version": "1.0.0",
-  "description": "Working with npm and Gulp",
-  "main": "index.js",
+  "description": "Using NPM and Gulp.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/jverdesoto/ga-fewd.git"
   },
-  "author": "General Assembly",
+  "author": "Henry Pearce",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jverdesoto/ga-fewd/issues"
@@ -22,11 +22,13 @@
     "@babel/preset-env": "^7.22.14",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
+    "babel-register": "^6.26.0",
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-inject": "^5.0.5",
