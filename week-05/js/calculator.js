@@ -24,7 +24,34 @@ function addTwoNumbers (numOne, numTwo) {
 
 document.getElementById('mySubmit').addEventListener('click', (e) => {
     e.preventDefault
-    document.getElementById('result').innerHTML = addTwoNumbers(parseInt(document.getElementById('numOne').value), parseInt(document.getElementById('numTwo').value))
+    document.getElementById('addResult').innerHTML = addTwoNumbers(parseInt(document.getElementById('numOne').value), parseInt(document.getElementById('numTwo').value))
+})
+
+function subtractTwoNumbers (numOne, numTwo) {
+    return numOne =- numTwo
+}
+
+document.getElementById('mySubmit').addEventListener('click', (e) => {
+    e.preventDefault
+    document.getElementById('result').innerHTML = subtractTwoNumbers(parseInt(document.getElementById('numOne').value), parseInt(document.getElementById('numTwo').value))
+})
+
+function multiplyTwoNumbers (numOne, numTwo) {
+    return numOne * numTwo
+}
+
+document.getElementById('mySubmit').addEventListener('click', (e) => {
+    e.preventDefault
+    document.getElementById('result').innerHTML = multiplyTwoNumbers(parseInt(document.getElementById('numOne').value), parseInt(document.getElementById('numTwo').value))
+})
+
+function divideTwoNumbers (numOne, numTwo) {
+    return numOne + numTwo
+}
+
+document.getElementById('mySubmit').addEventListener('click', (e) => {
+    e.preventDefault
+    document.getElementById('result').innerHTML = divideTwoNumbers(parseInt(document.getElementById('numOne').value), parseInt(document.getElementById('numTwo').value))
 })
 
 console.log(addTwoNumbers(2,5));
