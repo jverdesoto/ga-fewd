@@ -6,26 +6,47 @@
     <title>Calculator</title>
 </head>
 <body>
-    
+    <p>Addition</p>
     <form action="#">
         <input type="number" name="numOne" id="numOne">
         <strong>+</strong>
         <input type="number" name="numTwo" id="numTwo">
         <input type="submit" value="Add" id="mySubmit">
-        <!--<input type="text" placeholder="Type Here" name="text" maxlength="2" required>
-        <input type="color" name="color" id="color">
-        <input type="button" value="Click me!">
-        <input type="checkbox" name="checkbox" id="check">
-        <input type="radio" name="radio" id="radio">
-        <input type="tel" name="'tel" id="'tel">
-        <textarea name="" id="" cols="50" rows="15">DDDDD</textarea>
-        <select name="" id="">
-            <option value="1">1</option>
-            <option value="2">2</option>
-        </select>-->
     </form>
-    <div id="result"></div>
+    <div id="answer"></div>
     <br><br>
+
+    <p>Subtraction</p>
+    <form action="#">
+        <input type="number" name="numThree" id="numThree">
+        <strong>-</strong>
+        <input type="number" name="numFour" id="numFour">
+        <input type="submit" value="Subtract" id="mySubmit1">
+    </form>
+    <div id="answer2"></div>
+    <br><br>
+
+    <p>Multiplication</p>
+    <form action="#">
+        <input type="number" name="numFive" id="numFive">
+        <strong>x</strong>
+        <input type="number" name="numSix" id="numSix">
+        <input type="submit" value="Multiply" id="mySubmit2">
+    </form>
+    <div id="answer3"></div>
+    <br><br>
+
+    <p>Division</p>
+    <form action="#">
+        <input type="number" name="numSeven" id="numSeven">
+        <strong>%</strong>
+        <input type="number" name="numEight" id="numEight">
+        <input type="submit" value="Division" id="mySubmit3">
+    </form>
+    <div id="answer4"></div>
+    <div id="errorDiv" style="color:red;"></div>
+    <br><br>
+
     <form action="#">
         <label for="name">Your Name</label>
         <input type="text" id="name" required>
