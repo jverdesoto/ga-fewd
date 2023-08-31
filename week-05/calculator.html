@@ -6,6 +6,7 @@
     <title>Calculator</title>
 </head>
 <body>
+    <header>Addition</header>
     <form action="#">
         <!-- <input type="text" placeholder="Hello" name="text" size="50" maxlength="2" required>
         <input type="color" name="color" id="color">
@@ -21,9 +22,51 @@
         <input type="number" name="numOne" id="numOne" required>
         <strong>+</strong>
         <input type="number" name="numTwo" id="numTwo" required>
-        <input type="submit" value="Add" id="mySubmit">
+        <input type="submit" value="Add" id="addSubmit">
     </form>
     <div id="addResult"></div>
+    <p></p>
+    <header>Subtraction</header>
+    <form action="#">
+        <input type="number" name="numThree" id="numThree" required>
+        <strong>-</strong>
+        <input type="number" name="numFour" id="numFour" required>
+        <input type="submit" value="Subtract" id="subtractSubmit">
+    </form>
+    <div id="subtractResult"></div>
+    <p></p>
+    <header>Multiplication</header>
+    <form action="#">
+        <input type="number" name="numFive" id="numFive" required>
+        <strong>*</strong>
+        <input type="number" name="numSix" id="numSix" required>
+        <input type="submit" value="Multiply" id="multiplySubmit">
+    </form>
+    <div id="multiplyResult"></div>
+    <p></p>
+    <header>Division</header>
+    <form action="#">
+        <input type="number" name="numSeven" id="numSeven" required>
+        <strong>/</strong>
+        <input type="number" name="numEight" id="numEight" required>
+        <input type="submit" value="Divide" id="divideSubmit">
+    </form>
+    <div id="divideResult"></div>
+    <p></p>
+    <header>Dynamic Calculation</header>
+    <form action="#">
+        <input type="number" name="numNine" id="numNine" required>
+        <select name="operator" id="operator">
+            <option value="Add">+</option>
+            <option value="Subtract">-</option>
+            <option value="Multiply">*</option>
+            <option value="Divide">/</option>
+        </select>
+        <input type="number" name="numTen" id="numTen" required>
+        <input type="submit" name="Calculate" id="calculateSubmit">
+    </form>
+    <div id="calculateResult"></div>
+    <p></p>
     <form action="#">
         <label for="name">Your name</label>
         <input type="text" name="name" id="name" required>
