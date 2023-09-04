@@ -1,0 +1,19 @@
+#container {
+    background-color: aqua;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    .card {
+        background-color: bisque;
+        height: 100px;
+        width: 100%;
+    }
+    // Dark theme
+    &.dark {
+        background-color: #222;
+        .card {
+            background-color: #eee;
+        }
+    }
+}
