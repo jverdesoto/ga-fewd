@@ -1,0 +1,30 @@
+#container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+    width: 100%;
+    min-height: 30px;
+    .card {
+        height: 150px;
+        width: 150px;
+        background-color: blue;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: green;
+    }
+
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        background-color: yellow;
+    }
+
+    &.dark {
+        background-color: #222;
+        .card {
+            background-color: #eee;
+        }
+    }
+}
