@@ -1,0 +1,32 @@
+#container {
+    width: 100vw;
+    background-color: #ee0c0c;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    padding: 25px;
+
+    .card {
+        background-color: #1d16cd;
+        height: 125px;
+        width: 125px;
+    }
+
+    @media screen and (max-width: 1023px) and (min-width: 769px) {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
+    //Dark Theme
+    &.dark {
+        background-color: darkgrey;
+        .card {
+            background-color: black;
+        }
+    }
+}
