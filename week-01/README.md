@@ -174,7 +174,7 @@ We can switch versions with the following command:
 First we need an account in [Github](https://github.com/). If you don't already have one, please create it. You can use SSO
 
 Now in a Terminal window we'll create an ssh key-pair
-> `ssh key-gen`
+> `ssh-keygen`
 
 You'll be promted to write a file name. **Please leave it blank to use the default setting** by hitting *Return*
 
