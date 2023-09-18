@@ -1,0 +1,53 @@
+{
+    "name": "ga-fewd",
+    "version": "1.0.0",
+    "description": "finalproject",
+    "main": "gulpfile.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/jverdesoto/ga-fewd.git"
+    },
+    "author": "Henry Pearce",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/jverdesoto/ga-fewd/issues"
+    },
+    "homepage": "https://github.com/jverdesoto/ga-fewd#readme",
+    "dependencies": {
+      "@babel/cli": "^7.22.10",
+      "@babel/core": "^7.22.11",
+      "@babel/preset-env": "^7.22.14",
+      "babel": "^6.23.0",
+      "babel-cli": "^6.26.0",
+      "babel-register": "^6.26.0",
+      "babelify": "^10.0.0",
+      "browserify": "^17.0.0",
+      "gulp": "^4.0.2",
+      "gulp-babel": "^8.0.0",
+      "gulp-clean": "^0.4.0",
+      "gulp-cli": "^2.3.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-cssnano": "^2.1.3",
+      "gulp-inject": "^5.0.5",
+      "gulp-sass": "^5.1.0",
+      "gulp-uglify": "^3.0.2",
+      "jquery": "^3.7.1",
+      "minimatch": "^9.0.3",
+      "sass": "^1.66.1",
+      "vinyl-buffer": "^1.0.1",
+      "vinyl-source-stream": "^2.0.0"
+    },
+    "babel": {
+      "presets": [
+        "@babel/preset-env"
+      ]
+    },
+    "browserify": {
+      "transform": [
+        "babelify"
+      ]
+    }
+  }
