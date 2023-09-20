@@ -1,1 +1,1 @@
-body{background-color:#fff;transition:background-color .3s ease-in-out}body.dark-theme{background-color:#000;color:#fff}.form-control{width:500px}@media (max-width:768px){.form-control{width:100%}}#theme{font-size:10px}
+body{background-color:#fff;transition:background-color .3s ease-in-out}body.dark-theme{background-color:#000;color:#fff}body.dark-theme footer{color:#000}.form-control{width:500px}@media (max-width:768px){.form-control{width:100%}}#theme{font-size:10px}

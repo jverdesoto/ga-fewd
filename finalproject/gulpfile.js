@@ -32,7 +32,7 @@ gulp.task('js', () => {
 
 gulp.task('watch', () => {
     gulp.watch('./assets/**/*.scss', gulp.series('sass'))
-    gulp.watch(['./assets/js/*.js', './assets/app.js'], gulp.series('js'))
+    gulp.watch(['./assets/**/*.js', './assets/app.js'], gulp.series('js'))
 })
 
 gulp.task('default', gulp.series('js', 'sass'))

@@ -1,3 +1,7 @@
+import "./js/blogs"
+import "./js/blogAuthors"
+
+
 const themeButton = document.getElementById("theme");
 
 function toggleBackgroundColor() {
