@@ -12,64 +12,80 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-info">
-            <div class="row d-flex mx-auto w-100">
-                <div class="col-sm-12 col-md-2">
-                    <a class="navbar-brand" href="index.html">My Blog</a>
-                </div>
-                <div class="col-sm-12 col-md-9 d-flex justify-content-center">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-dark" type="submit">Search</button>
-                    </form>
-                </div>
-                <div class="col-sm-12 col-md-1 d-flex justify-content-md-end justify-content-sm-start">
-                    <div class="nav-item dropdown">
-                        <ul class="navbar-nav d-flex">
-                            <li class="nav-item dropdown position-relative">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    data-bs-popper="none" data-bs-boundary="viewport" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-sm-start dropdown-menu-md-end position-absolute">
-                                    <li><a class="dropdown-item" href="index.html">Home</a></li>
-                                    <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
-                                    <li><a class="dropdown-item" href="authors.html">Authors</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="row d-flex mx-auto w-100">
+            <div class="col-sm-12 col-md-2">
+                <a class="navbar-brand" href="index.html">My Blog</a>
+            </div>
+            <div class="col-sm-12 col-md-9 d-flex justify-content-center">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-1 d-flex justify-content-md-end justify-content-sm-start">
+                <div class="nav-item dropdown">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                data-bs-popper="none" data-bs-boundary="viewport" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-sm-start dropdown-menu-md-end position-absolute">
+                                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                                <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+                                <li><a class="dropdown-item" href="authors.html">Authors</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
     </nav>
     <div>
         <p>
             Blog Details Page
         </p>
     </div>
-    <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Blog Title</label>        
-        <input type="text" class="form-control" id="formGroupExampleInput" value="Blog 1" disabled readonly>
-      </div>
-      <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Blog Author</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" value="John Smith" disabled readonly>
-      </div>
-      <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Blog Date Published</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" value="09/09/2023" disabled readonly>
-      </div>
-      <img src="..." class="img-thumbnail" alt="...">
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Blog Post</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly>This be the blog post</textarea>
-      </div>
+    <div class="container">
+        <div class="row mx-auto">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="blogTitle" class="form-label">Blog Title</label>
+                    <input type="text" class="form-control" id="blogTitle" value="Blog 1" disabled readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="blogAuthor" class="form-label">Blog Author</label>
+                    <input type="text" class="form-control" id="blogAuthor" value="John Smith" disabled readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="blogDate" class="form-label">Blog Date Published</label>
+                    <input type="text" class="form-control" id="blogDate" value="09/09/2023" disabled readonly>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <img src="..." class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <h3>Blog Post</h3>
+                    <p>ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor nunc vitae purus convallis, id feugiat elit tristique. Cras tristique id metus eget scelerisque. Ut eu urna eu tortor consectetur scelerisque. Nulla facilisi. Curabitur eget ipsum vitae velit laoreet aliquet id ut libero. Vivamus in est ut lorem efficitur tristique. Quisque vulputate volutpat quam, a placerat nisl tincidunt ut. In hac habitasse platea dictumst. Duis vel arcu sit amet libero blandit finibus nec et risus.</p>
+                    <p>Pellentesque dapibus lectus vel eros cursus, eu bibendum leo tempus. Sed vel mauris nec justo tristique iaculis. Aliquam non lectus vel tortor efficitur rhoncus. Nulla facilisi. Suspendisse lacinia metus quis dolor volutpat, a laoreet turpis aliquet. Fusce bibendum vel augue eget consequat. Vestibulum efficitur ullamcorper metus, eget euismod urna hendrerit non. Nulla facilisi. Vestibulum euismod, augue vel tincidunt vehicula, justo urna fermentum tortor, ac varius nunc metus id arcu. Curabitur rhoncus vel velit nec lacinia. Donec vel tristique ex. Integer vulputate congue arcu in suscipit. Phasellus ut eros nec metus scelerisque tincidunt. Integer sed velit et augue dignissim laoreet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="bg-info text-center py-3">
         <div class="container-fluid d-flex align-items-center">
             <p class="col-sm-12 col-md-1 d-flex justify-content-start"></p>
-            <p class="col-sm-12 col-md-10 d-flex justify-content-center mb-0">&copy; 2023 My Blog. All Rights Reserved.</p>
+            <p class="col-sm-12 col-md-10 d-flex justify-content-center mb-0">&copy; 2023 My Blog. All Rights Reserved.
+            </p>
             <button id="theme" class="btn btn-sm btn-dark col-sm-12 col-md-1">Change Theme</button>
         </div>
-    </footer>    
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
