@@ -23,4 +23,15 @@ var myAuthors = [
         blogAuthorGender: "Female",
         blogAuthorImage: "janesmith.jpg"
     },
-]
+];
+const tbody = document.getElementById("blogAuthorsTableBody")
+for (const author of myAuthors) {      
+  const row = document.createElement("tr");      
+  const authorsCell = document.createElement("td");
+  authorsCell.textContent = author.blogAuthor;    
+  const genderCell = document.createElement("td");
+  genderCell.textContent = author.blogAuthorGender;      
+  row.appendChild(authorsCell);
+  row.appendChild(genderCell);      
+  tbody.appendChild(row);
+};

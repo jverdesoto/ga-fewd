@@ -103,5 +103,22 @@ const myBlogs = [
       col.appendChild(card);
       document.getElementById("blogs").appendChild(col);
     });
-  }
+  };
+    const tbody = document.getElementById("blogsTableBody")
+    for (const blog of myBlogs) {      
+      const row = document.createElement("tr");      
+      const titleCell = document.createElement("td");
+      titleCell.textContent = blog.blogTitle;  
+      const authorCell = document.createElement("td");
+      authorCell.textContent = blog.blogAuthor;  
+      const dateCell = document.createElement("td");
+      dateCell.textContent = blog.blogPublishedDate;      
+      row.appendChild(titleCell);
+      row.appendChild(authorCell);
+      row.appendChild(dateCell);      
+      tbody.appendChild(row);
+    }
+    
+
+
 
