@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="hompage.html" style="text-decoration:none;">Freddie's Blog</a></h1>
+            </div>
+            <a href="content.html?postIndex=2">Post 1</a>
+            <a href="content.html?postIndex=3">Post 2</a>
+            <a href="content.html?postIndex=4">Post 3</a>
+        </nav>
+    </header>
+    <div class="main-body-container"></div>
+        <section class="signup">
+            <h2>Sign Up</h2>
+            <form>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+    <footer>
+        <div class="footer-buttons">
+            <button id="footer-button1">Dark Mode</button>
+            <button id="footer-button2">Invert</button>
+        </div>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
