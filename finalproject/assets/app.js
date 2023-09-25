@@ -1,6 +1,17 @@
-import "./js/blogs"
-import "./js/blogAuthors"
+import "./js/blogDetails";
+import Home from "./js/home";
+import Blogs from "./js/blogs";
+import Authors from "./js/blogAuthors";
 
+if (document.querySelector("[data-authors]")) {
+    new Authors
+}
+if (document.querySelector("[data-blogs]")) {
+    new Blogs
+}
+if (document.querySelector("[data-home]")) {
+    new Home
+}
 
 const themeButton = document.getElementById("theme");
 
