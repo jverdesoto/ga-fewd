@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
 </head>
 
-<body>
+<body data-blogDetails>
     <nav class="navbar navbar-expand-lg bg-info">
         <div class="row d-flex mx-auto w-100">
             <div class="col-sm-12 col-md-2">
@@ -42,24 +42,22 @@
         </div>
     </nav>
     <div>
-        <p>
-            Blog Details Page
-        </p>
+        <p></p>
     </div>
     <div class="container">
         <div class="row mx-auto">
             <div class="col-md-6">
                 <div class="mb-3">
-                    <label for="blogTitle" class="form-label">Blog Title</label>
-                    <input type="text" class="form-control" id="blogTitle" disabled readonly>
+                    <label for="blogTitle" class="form-label" style="font-weight: bold;">Blog Title</label>
+                    <p id="blogTitle"></p>
                 </div>
                 <div class="mb-3">
-                    <label for="blogAuthor" class="form-label">Blog Author</label>
-                    <input type="text" class="form-control" id="blogAuthor" disabled readonly>
+                    <label for="blogAuthor" class="form-label" style="font-weight: bold;">Blog Author</label>                    
+                    <p id="blogAuthor"></p>
                 </div>
                 <div class="mb-3">
-                    <label for="blogDate" class="form-label">Blog Date Published</label>
-                    <input type="text" class="form-control" id="blogDate" disabled readonly>
+                    <label for="blogDate" class="form-label" style="font-weight: bold;">Blog Date Published</label>
+                    <p id="blogDate"></p>
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">

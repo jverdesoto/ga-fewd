@@ -2,6 +2,7 @@ import "./js/blogDetails";
 import Home from "./js/home";
 import Blogs from "./js/blogs";
 import Authors from "./js/blogAuthors";
+import "./js/authorDetails";
 
 if (document.querySelector("[data-authors]")) {
     new Authors

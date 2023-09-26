@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
 </head>
 
-<body>
+<body data-authorDetails>
     <nav class="navbar navbar-expand-lg bg-info">
         <div class="row d-flex mx-auto w-100">
             <div class="col-sm-12 col-md-2">
@@ -42,24 +42,22 @@
         </div>
     </nav>
     <div>
-        <p>
-            Author Details Page
-        </p>
+        <p></p>
     </div>
     <div class="container">
         <div class="row mx-auto">
             <div class="col-md-6">
                 <div class="mb-3">
-                    <label for="blogAuthor" class="form-label">Blog Author</label>
-                    <input type="text" class="form-control" id="blogAuthor" value="John Smith" disabled readonly>
+                    <label for="blogAuthorName" class="form-label" style="font-weight: bold;">Blog Author</label>
+                    <p id="blogAuthorName"></p>
                 </div>
                 <div class="mb-3">
-                    <label for="gender" class="form-label">Gender</label>
-                    <input type="text" class="form-control" id="gender" value="Male" disabled readonly>
+                    <label for="blogAuthorGender" class="form-label" style="font-weight: bold;">Gender</label>
+                    <p id="blogAuthorGender"></p>
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <img src="./img/johnsmith.jpg" class="img-fluid author-image" alt="...">
+                <img id="authorImage" class="img-fluid author-image" alt="Author Image">
             </div>
         </div>
     </div>
@@ -73,22 +71,7 @@
                 <th scope="col">Blog Published Date</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>                
-                <td>Blog 1</td>
-                <td>John Smith</td>
-                <td>09/09/2023</td>
-              </tr>
-              <tr>                
-                <td>Blog 5</td>
-                <td>John Smith</td>
-                <td>16/09/2023</td>
-              </tr>
-              <tr>
-                <td>Blog 9</td>
-                <td>John Smith</td>
-                <td>17/09/2023</td>
-              </tr>
+            <tbody id="authorDetailsTableBody">              
             </tbody>
           </table>
     </div>

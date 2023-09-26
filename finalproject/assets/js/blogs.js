@@ -10,6 +10,8 @@ export default class Blogs {
         const titleLink = document.createElement("a");
         titleLink.href = `blogDetails.html?blogId=${blog.blogId}`;
         titleLink.textContent = blog.blogTitle;
+        titleLink.classList.add("link-primary");
+        titleLink.classList.add("link-underline-opacity-0");   
         titleCell.appendChild(titleLink);
         const authorCell = document.createElement("td");
         authorCell.textContent = blog.blogAuthor;  
