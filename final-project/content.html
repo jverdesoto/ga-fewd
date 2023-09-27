@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content Page</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <div class="logo">
-                <h1><a href="hompage.html" style="text-decoration:none;">Freddie's Blog</a></h1>
-            </div>
+            <h1 class="logo">
+                <a href="./hompage.html">Freddie's Blog</a>
+            </h1>
             <a href="content.html?postIndex=2">Post 1</a>
             <a href="content.html?postIndex=3">Post 2</a>
             <a href="content.html?postIndex=4">Post 3</a>
@@ -19,19 +20,22 @@
         </nav>
     </header>
 
-    <section class="content-container">
-        <div class="card-container" id="card-container">
-            
-        </div>
-    </section>
+    <main>
+        <section class="content-container">
+            <div class="card-container" id="card-container">
+                
+            </div>
+        </section>
+    </main>
 
-    <footer>
+    <footer class="footer">
         <div class="footer-buttons">
             <button id="footer-button1">Dark Mode</button>
             <button id="footer-button2">Invert Mode</button>
         </div>
     </footer>
 
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
 </body>
+
 </html>

@@ -1,14 +1,24 @@
-/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Raleway:ital,wght@1,300&display=swap");
 
-/* Reset default styles */
-body {
-  font-family: "Poppins", sans-serif;
+html, body {
+  height: 100%;
   margin: 0;
-  
+  padding: 0;
 }
 
-/* Header Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+}
+
+header {
+  flex-shrink: 0;
+}
+
+/* ===== Header Styles ===== */
 header nav.navbar {
   background-color: rgb(143, 138, 138);
   color: #5A5A5A;
@@ -18,16 +28,6 @@ header nav.navbar {
   padding: 10px 20px;
 }
 
-/* Style the logo link */
-header nav.navbar .logo a {
-  text-decoration: none;
-  color: navy;
-  font-weight: bold;
-  font-size: 24px;
-  margin-right: 20px;
-}
-
-/* Style the Post links */
 header nav.navbar a {
   text-decoration: none;
   color: navy;
@@ -35,7 +35,12 @@ header nav.navbar a {
   margin-right: 10px;
 }
 
-/* Style the sign-up button */
+header nav.navbar .logo a {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
 header nav.navbar .signup-button {
   background-color: navy;
   color: cornsilk;
@@ -45,33 +50,45 @@ header nav.navbar .signup-button {
   cursor: pointer;
 }
 
-/* Main Content Styles */
+/* ===== Main Content Styles ===== */
 .main-container {
   padding: 20px;
-  background-image: url('./img/flat-lay-arrangement-with-gadgets-copy-space_23-2148847744.avif'); /* Replace 'your-image.jpg' with your image filename and path */
+  background-image: url('./img/sean-oulashin-KMn4VEeEPR8-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* Ensures the background image doesn't scroll with content */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .main-body-container {
-  background-image:  url('./img/depositphotos_77040729-stock-photo-vacation-entertainment-concept.jpeg');
-  background-size: cover;   /* Ensures the image covers the entire section */
-  background-repeat: no-repeat; /* Makes sure the image doesn't repeat */
-  background-position: center center; /* Ensures the image is centered */
+  background-image: url('./img/vladimir-anikeev-IM8ZyYaSW6g-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
 }
 
 .main-title {
-  font-family: "Poppins", sans-serif;
   font-size: large;
 }
 
-/* Card Styles */
+.content-container {
+  background-image: url('./img/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===== Card Styles ===== */
 .card {
-  background-color: lightgrey; /* Set the background color for cards to light grey */
+  background-color: lightgrey;
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
@@ -79,62 +96,59 @@ header nav.navbar .signup-button {
   flex-direction: column;
   align-items: center;
   width: 250px;
-  height: auto;
+  max-height: 525px;
+  overflow: auto;
+}
+
+.card img,
+.card h3,
+.card p {
+  flex-grow: 1;
 }
 
 .card img {
   max-width: 150px;
   max-height: 150px;
-  width: auto;
-  height: auto;
 }
 
-
-/* Center card components in content section */
-.content-container {
-  background-image: url('./img/desk-arrangement-with-empty-notepad-with-copy-space_23-2148513379.avif');
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* This ensures that the content section takes the full viewport height */
+.card .see-more-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-
-
-/* Footer Styles */
+/* ===== Footer Styles ===== */
 footer {
-  background-color: rgb(65, 78, 61); /* Background color for the footer */
+  background-color: rgb(65, 78, 61);
   color: #5A5A5A;
   text-align: center;
   padding: 10px;
-  position: fixed; /* Fixed position so it stays at the bottom */
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensures footer is above other content */
+  z-index: 1000;
+  flex-shrink: 0;
 }
 
-/* Footer Buttons Styles */
 .footer-buttons {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 300px; /* Adjust the max-width as needed */
-  margin: 0 auto; /* Center align the buttons horizontally */
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .footer-button {
-  flex: 1; /* Distribute available space equally between buttons */
+  flex: 1;
   background-color: navy;
   color: cornsilk;
   border: none;
-  padding: 10px 0; /* Adjust padding as needed */
+  padding: 10px 0;
   cursor: pointer;
-  margin: 0 5px; /* Add margin for spacing between buttons */
+  margin: 0 5px;
 }
 
-
-/* Title Section Styles */
+/* ===== Title Section Styles ===== */
 .title-section {
   background-color: #597477;
   padding: 20px;
@@ -142,7 +156,6 @@ footer {
 }
 
 .title-section h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 50px;
   color: lightgray;
   margin-bottom: 10px;
@@ -155,29 +168,28 @@ footer {
   margin-bottom: 20px;
 }
 
-
+/* ===== Signup Section Styles ===== */
 .signup {
   width: 100%;
-  max-width: 400px; /* Set the max-width as per design requirement */
+  max-width: 400px;
+  height: auto;
   padding: 20px;
-  background-color: #f2f2f2; /* A light gray background for the form for clarity */
-  border-radius: 8px; /* Optional rounded corners */
-  margin: 50px auto 0 auto; /* Added top margin of 50px, center align the section horizontally */
-  text-align: center; /* Center align text elements */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.signup form {
+.signup form, .form-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.form-group {
   width: 100%;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 25px;
 }
 
 .form-group label {
@@ -186,29 +198,26 @@ footer {
 
 .form-group input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-bottom: 5px;
 }
 
 button[type="submit"] {
   background-color: navy;
   color: cornsilk;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   cursor: pointer;
-  border-radius: 4px; /* Optional rounded corners */
+  border-radius: 4px;
+  margin-top: 15px;
 }
 
-
-
-
-
-/* Responsive Styles */
+/* ===== Responsive Styles ===== */
 @media (max-width: 720px) {
   .main-container {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
   .card {

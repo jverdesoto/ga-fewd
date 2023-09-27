@@ -6,32 +6,31 @@
     <title>Blog Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css"> 
 </head>
-<body>
-    <header>
 
+<body>
+    <header class="header">
         <nav class="navbar">
-            <div class="logo">
-                <h1><a href="hompage.html" style="text-decoration:none;">Freddie's Blog</a></h1>
-            </div>
-                <a href="content.html?postIndex=2">Post 1</a>
-                <a href="content.html?postIndex=3">Post 2</a>
-                <a href="content.html?postIndex=4">Post 3</a>
-                <a href="signup.html" class="signup-btn">Sign Up</a>
+            <h1 class="logo">
+                <a href="./hompage.html">Freddie's Blog</a>
+            </h1>
+            <a href="content.html?postIndex=2">Post 1</a>
+            <a href="content.html?postIndex=3">Post 2</a>
+            <a href="content.html?postIndex=4">Post 3</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
         </nav>
     </header>
 
-<main>
-    <section class="homepage">
-        <div class="title-section">
-            <h2>Welcome to My Blog</h2>
-            <p>Explore the latest articles.</p>
-        </div>
-
-        <div class="main-container">
-           
-        </div>
-    </section>
-</main>
+    <main>
+        <section class="homepage">
+            <header class="title-section">
+                <h2>Welcome to My Blog</h2>
+                <p>Explore the latest articles.</p>
+            </header>
+            <div class="main-container">
+               
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-buttons">
@@ -40,6 +39,6 @@
         </div>
     </footer>
 
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
 </body>
 </html>

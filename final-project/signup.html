@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Page</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <div class="logo">
-                <h1><a href="hompage.html" style="text-decoration:none;">Freddie's Blog</a></h1>
-            </div>
+            <h1 class="logo">
+                <a href="./hompage.html">Freddie's Blog</a>
+            </h1>
             <a href="content.html?postIndex=2">Post 1</a>
             <a href="content.html?postIndex=3">Post 2</a>
             <a href="content.html?postIndex=4">Post 3</a>
         </nav>
     </header>
-    <div class="main-body-container"></div>
+
+    <main class="main-body-container">
         <section class="signup">
             <h2>Sign Up</h2>
-            <form>
+            <form id="signupForm">
                 <div class="form-group">
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName" required>
@@ -38,16 +41,16 @@
                 </div>
             </form>
         </section>
-    </div>
+    </main>
 
-
-    <footer>
+    <footer class="footer">
         <div class="footer-buttons">
             <button id="footer-button1">Dark Mode</button>
-            <button id="footer-button2">Invert</button>
+            <button id="footer-button2">Invert Mode</button>
         </div>
     </footer>
 
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
 </body>
+
 </html>
