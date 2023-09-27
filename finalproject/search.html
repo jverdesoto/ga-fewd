@@ -16,8 +16,8 @@
                 <a class="navbar-brand" href="index.html">My Blog</a>
             </div>
             <div class="col-sm-12 col-md-9 d-flex justify-content-center">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex" role="search" action="search.html" method="get">
+                    <input name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-dark" type="submit">Search</button>
                 </form>
             </div>
@@ -40,11 +40,22 @@
             </div>
         </div>
 </nav>
-<div>
-    <p>
-        Search
-    </p>
+<div class="container mt-4" id="searchResults">
+    <div class="d-flex justify-content-center align-items-center">
+        <h3>Search Results</h3>
+        </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Blog Title</th>
+                <th scope="col">Blog Author</th>
+                <th scope="col">Blog Published Date</th>
+            </tr>
+        </thead>
+        <tbody id="searchResultsList"></tbody>
+    </table>
 </div>
+<p></p>
 <footer class="bg-info text-center py-3">
     <div class="container-fluid d-flex align-items-center">
         <p class="col-sm-12 col-md-1 d-flex justify-content-start"></p>
