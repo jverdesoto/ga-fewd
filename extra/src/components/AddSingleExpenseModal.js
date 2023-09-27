@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { Modal, Form, Select, Button } from 'react-bootstrap'
 import { useBudgets, UNCATEGORIES_BUDGET_ID } from '../context/BudgetProvider'
 
-export default function AddSingleExpenseModal({ show, handleClose, defaultBudgetID, defaultBudgetName }) {
+export default function AddSingleExpenseModal({ budgetId, handleClose, defaultBudgetID, defaultBudgetName }) {
     const descriptionRef = useRef();
     const amountRef = useRef();
     const budgetIdRef = useRef();
@@ -20,7 +20,7 @@ export default function AddSingleExpenseModal({ show, handleClose, defaultBudget
         handleClose()
     }
   return (
-    <Modal show={show} onHide={handleClose}>
+    <Modal show={budgetId != null} onHide={handleClose}>
         <Form onSubmit={handleSubmit}>
             <Modal.Header closeButton>
                 <Modal.Title>Add Expense</Modal.Title>
@@ -37,14 +37,14 @@ export default function AddSingleExpenseModal({ show, handleClose, defaultBudget
                 <Form.Group className='mb-2' controlId='budgetId'>
                     <Form.Label>Budget ID</Form.Label>
                     <Form.Select 
-                        defaultValue ={ selectedBudgetId }
+                        defaultValue ={ budgetId }
                         ref={ budgetIdRef }
-                        disbaled
+                        disabled
                         >
                         <option id={UNCATEGORIES_BUDGET_ID}>{UNCATEGORIES_BUDGET_ID}</option>
                         {
                             budgets.map( (budget) => (
-                                <option key={ budget.id } value={ budget.id }>{budget.name}</option>
+                                <option key={ budget.id } value={ budget.id } >{budget.name}</option>
                             ))
                         }
                         </Form.Select>

@@ -29,7 +29,7 @@ export default function BudgetCard({name, amount, maxAmount, gray, onViewExpense
             now={amount}
             />
             <Stack direction='horizontal' gap='2' className='mt-4'>
-                <Button variant='outline-primary' onClick={() => showAddSingleExpenseModal(name)} className='ms-auto'>Add Single Expense</Button>
+                <Button variant='outline-primary' onClick={showAddSingleExpenseModal} className='ms-auto'>Add Single Expense</Button>
                 <Button variant='outline-secondary' onClick={onViewExpensesClick}>View Expense</Button>
             </Stack>
         </Card.Body>

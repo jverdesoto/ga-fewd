@@ -13,7 +13,7 @@ function App() {
   const [showAddExpenseModal, setShowAddExpenseModal] = useState(false)
   const { budgets, getBudgetExpenses } = useBudgets()
   const [viewExpenseModalBudgetId, setViewExpenseModalBudgetId] = useState()
-  const [showAddSingleExpenseModal, setShowAddSingleExpenseModal] = useState(false)
+  const [showAddSingleExpenseModal, setShowAddSingleExpenseModal] = useState()
   return (
     <>
   <Container>
@@ -40,7 +40,7 @@ function App() {
               amount={amount} 
               maxAmount={budget.max}
               onViewExpensesClick = { () => setViewExpenseModalBudgetId(budget.id) }
-              showAddSingleExpenseModal = { (budgetName) => setShowAddSingleExpenseModal(true, budgetName )}
+              showAddSingleExpenseModal = { () => setShowAddSingleExpenseModal(budget.id)}
               />
             )
           } )
@@ -53,7 +53,7 @@ function App() {
   <AddBudgetsModal show={showAddBudgetModal} handleClose={() => setShowAddBudgetModal(false)}/>
   <AddExpensesModal show={showAddExpenseModal} handleClose={() => setShowAddExpenseModal(false)}/>
   <ViewExpensesModal budgetId={ viewExpenseModalBudgetId } handleClose={ () => setViewExpenseModalBudgetId() } />
-  <AddSingleExpenseModal show={ showAddSingleExpenseModal } handleClose={ () => setShowAddSingleExpenseModal(false) } />
+  <AddSingleExpenseModal budgetId={ showAddSingleExpenseModal } handleClose={ () => setShowAddSingleExpenseModal() } />
   </>
   )
 }
