@@ -1,26 +1,20 @@
 import { myBlogs } from "./blogsdata";
 
     const searchForm = document.getElementById("submit");
-    const searchInput = document.getElementById("search");
-    
-    
-
+    const searchInput = document.getElementById("search"); 
     searchForm.addEventListener("click", (e) => {
         e.preventDefault();
-        console.log(searchInput.value); 
+        // console.log(searchInput.value); 
         window.location.href = `search.html?q=${searchInput.value}`
-        // const searchQuery = searchInput.value.trim().toLowerCase();
-        
+        // const searchQuery = searchInput.value.trim().toLowerCase();        
         // displaySearchResults(filteredBlogs);
     });
 
-document.addEventListener("DOMContentLoaded", () => {
-    
+document.addEventListener("DOMContentLoaded", () => {    
     if (window.location.href.indexOf('search') >-1 ) {
-        console.log("working")
+        // console.log("working")
         const urlParams = new URLSearchParams(window.location.search);
-        const search = urlParams.get("q");
-        
+        const search = urlParams.get("q");        
         const filteredBlogs = myBlogs.filter((blog) =>
             blog.blogTitle.toLowerCase().includes(search)
         );

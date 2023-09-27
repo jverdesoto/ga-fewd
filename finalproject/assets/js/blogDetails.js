@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const blogId = urlParams.get("blogId");
   const blogImage = urlParams.get("blogImage");
-  console.log("Blog Image:", blogImage);
+  // console.log("Blog Image:", blogImage);
   const blog = myBlogs.find((item) => item.blogId === parseInt(blogId, 10));
   if (blog) {
     document.getElementById("blogTitle").textContent = blog.blogTitle;    

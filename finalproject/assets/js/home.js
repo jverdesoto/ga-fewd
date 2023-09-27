@@ -9,7 +9,7 @@ export default class Home {
     function createBlog(myBlogs, obj, authors) {
       myBlogs.map((blog, key) => {
         //THE IMAGE URL => obj[key].url
-        console.log(`${key} - ${obj[key].download_url}`);
+        // console.log(`${key} - ${obj[key].download_url}`);
         col = document.createElement("div");
         col.classList.add("col-lg-3", "col-md-3", "col-sm-12", "nb-3");
         card = document.createElement("div");
