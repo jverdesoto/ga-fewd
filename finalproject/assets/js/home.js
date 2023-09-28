@@ -1,11 +1,15 @@
 import { myBlogs } from "./blogsdata";
 import { myAuthors } from "./authorsData";
+import {fetchBlogImage} from "./blogImage";
 export default class Home {
   constructor() {    
     let col, card, cardBody, blogTitle, blogAuthor, blogPublishedDate, cardImage;
-    fetch("https://picsum.photos/v2/list")
-      .then((response) => response.json())
-      .then((obj) => createBlog(myBlogs, obj, myAuthors));
+    async function asyncImage() {
+      const result = await fetchBlogImage
+      console.log(result)
+    } asyncImage()
+    // createBlog(myBlogs, fetchBlogImage(), myAuthors);
+    
     function createBlog(myBlogs, obj, authors) {
       myBlogs.map((blog, key) => {
         //THE IMAGE URL => obj[key].url

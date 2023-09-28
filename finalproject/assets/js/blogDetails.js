@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     blogImageElement.src = blogImage;
     const blogContentElement = document.getElementById("blogContent");
     blogContentElement.innerHTML = blog.blogContent;   
-  } else {
-    console.error("Blog not found.");
+  // } else {
+  //   console.error("Blog not found.");
   }
 });

@@ -1,3 +1,4 @@
+import "./authorsData"
 export const myBlogs = [
     {
       blogId: 1,

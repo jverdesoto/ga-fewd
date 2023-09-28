@@ -4,6 +4,7 @@ import Blogs from "./js/blogs";
 import Authors from "./js/blogAuthors";
 import "./js/authorDetails";
 import "./js/search";
+import "./js/blogImage";
 
 if (document.querySelector("[data-authors]")) {
     new Authors

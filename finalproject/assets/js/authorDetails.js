@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             authorDetailsTableBody.appendChild(row);
           });
-    } else {
-        console.error("Author not found.");
+    // } else {
+    //     console.error("Author not found.");
       }
 });
