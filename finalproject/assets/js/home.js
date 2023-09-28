@@ -1,13 +1,16 @@
 import { myBlogs } from "./blogsdata";
 import { myAuthors } from "./authorsData";
-import {fetchBlogImage} from "./blogImage";
+import fetchBlogImage from "./blogImage";
 export default class Home {
   constructor() {    
     let col, card, cardBody, blogTitle, blogAuthor, blogPublishedDate, cardImage;
-    async function asyncImage() {
-      const result = await fetchBlogImage
-      console.log(result)
-    } asyncImage()
+    
+    fetchBlogImage()
+    .then( data => {
+      console.log(data);
+      createBlog(myBlogs, data, myAuthors);
+    } )
+    
     // createBlog(myBlogs, fetchBlogImage(), myAuthors);
     
     function createBlog(myBlogs, obj, authors) {
