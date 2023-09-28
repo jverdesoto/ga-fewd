@@ -7,7 +7,6 @@ export default class Home {
     
     fetchBlogImage()
     .then( data => {
-      console.log(data);
       createBlog(myBlogs, data, myAuthors);
     } )
     
