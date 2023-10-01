@@ -66,3 +66,4 @@ async function loadMovieDetails() {
 }
 
 window.onload = loadMovieDetails;
+

@@ -1,0 +1,17 @@
+.custom-navbar nav.navbar.bg-body-tertiary.fixed-top .container-fluid .col-2.text-center {
+  display: flex;
+  align-items: center;
+}
+.custom-navbar nav.navbar.bg-body-tertiary.fixed-top .container-fluid .col-2.text-center a.navbar-brand img {
+  width: 77px;
+  height: 60px;
+}
+.custom-navbar nav.navbar.bg-body-tertiary.fixed-top .container-fluid .col-2.text-center a.navbar-brand img.d-inline-block {
+  align-text-top: true;
+}
+.custom-navbar nav.navbar.bg-body-tertiary.fixed-top .container-fluid .col-2.text-center a.nav-link.active:first-child {
+  margin-right: 20px;
+}
+.custom-navbar nav.navbar.bg-body-tertiary.fixed-top .container-fluid .col.text-center ul.navbar-nav li.nav-item a.nav-link.active:first-child {
+  margin-right: 20px;
+}/*# sourceMappingURL=customSass.css.map */
