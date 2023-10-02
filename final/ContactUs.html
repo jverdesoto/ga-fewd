@@ -5,22 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the checkbox element
+            const checkbox = document.getElementById("flexSwitchCheckDefault");
+            const outsideText = document.getElementById("outsideText");
+            const bars = document.querySelectorAll("#bars");
+            // Add an event listener to detect changes in the checkbox state
+            checkbox.addEventListener("change", function () {
+                // Check if the checkbox is checked
+                if (this.checked) {
+                    bars.forEach(function (bar) {
+                        bar.style.cssText = "background-color: #4DAAE9 !important;";
+                    });
+                    outsideText.style.cssText = "color:white !important;"
+                    document.body.style.backgroundColor = "#302F30";
+                } else {
+                    // Set the background color to white
+                    bars.forEach(function (bar) {
+                        bar.style.cssText = "background-color: white !important;";
+                    });
+                    outsideText.style.cssText = "color:black !important;";
+                    document.body.style.backgroundColor = "white";
+                }
+            });
+        });
+    </script>
 </head>
 
 <body style="padding-top: 72px;">
     <div class="row">
-        <nav class="navbar bg-body-tertiary fixed-top">
+        <nav class="navbar bg-body-tertiary fixed-top" id="bars">
             <div class="container-fluid">
                 <div class="col-2 text-center" style="display: flex; align-items: center;">
 
                     <a class="navbar-brand" href="#">
-                        <img src="/Users/areej/Desktop/FEWD-July/ga-fewd/final/logo.svg" alt="Logo" width="77" height="60"
-                            class="d-inline-block align-text-top">
+                        <img src="/Users/areej/Desktop/FEWD-July/ga-fewd/final/logo.svg" alt="Logo" width="77"
+                            height="60" class="d-inline-block align-text-top">
                     </a>
                     <a class="nav-link active" aria-current="page" href="HomePage.html">Studio Ghibli Library</a>
 
                 </div>
-                <div class="col-8"></div>
+                <div class="col-2">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Theme</label>
+                    </div>
+                </div>
+                <div class="col-6"></div>
                 <div class="col text-center">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -38,51 +70,50 @@
             </div>
         </nav>
     </div>
-
-    <div class="container text-center">
-        <h2 style="margin-top: 72;">Hello,</h2>
-        <h4 style="margin-top: 32;">Want To Contact?</h4>
-        <p style="margin-top: 24;">Write your name and massege and we will get back to you!</p>
-    </div>
-    <div style="margin-left: 72px; margin-right: 72px; margin-top: 72px;">
-        <div class="row">
-            <div class="col-4 offset-2">
-
-                <b>Full Name</b>
-            </div>
-            <div class="col-4">
-                <b>Email</b>
-            </div>
+    <div id="outsideText">
+        <div class="container text-center">
+            <h2 style="margin-top: 72;">Hello,</h2>
+            <h4 style="margin-top: 32;">Want To Contact?</h4>
+            <p style="margin-top: 24;">Write your name and massege and we will get back to you!</p>
         </div>
-        <div class="row">
-            <div class="col-4 offset-2">
+        <div style="margin-left: 72px; margin-right: 72px; margin-top: 72px;">
+            <div class="row">
+                <div class="col-4 offset-2">
 
-                <input type="text" class="form-control">
+                    <b>Full Name</b>
+                </div>
+                <div class="col-4">
+                    <b>Email</b>
+                </div>
             </div>
-            <div class="col-4">
-                <input type="text" class="form-control">
-            </div>
-        </div>
-        <div class="row" style="margin-top: 32px;">
+            <div class="row">
+                <div class="col-4 offset-2">
 
-            <b class="col-8 offset-2">Massege</b>
-        </div>
-        <div class="row" style="margin-left: 4px; margin-right: 4px;">
-            <textarea style="
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 32px;">
+                <b class="col-8 offset-2">Massege</b>
+            </div>
+            <div class="row" style="margin-left: 4px; margin-right: 4px;">
+                <textarea style="
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
             margin-top: 6px;
             margin-bottom: 10px;" class="col-8 offset-2" name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <div class="row " style="margin-top: 32px;">
-            <div class="col-2 offset-2">
-                <a href="#" class="btn" style="background-color:#4DAAE9; color: #ffffff; width: 100%;">Send</a>
+            </div>
+            <div class="row " style="margin-top: 32px;">
+                <div class="col-2 offset-2">
+                    <a href="#" class="btn" style="background-color:#4DAAE9; color: #ffffff; width: 100%;">Send</a>
+                </div>
             </div>
         </div>
     </div>
-
-    <footer style="background-color: rgba(0, 0, 0, 0.2); margin-top: 72px;">
+    <footer style="background-color: rgba(0, 0, 0, 0.2); margin-top: 72px;" id="bars">
         <div class="row"
             style="margin-left: 72px; margin-right: 72px; display: flex; align-items: center; margin-top: 32;">
             <div class="col-3" style="margin-top: 32;">

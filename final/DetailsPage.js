@@ -64,6 +64,32 @@ async function loadMovieDetails() {
     }
     movieDetailsContainer.appendChild(element);
 }
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the checkbox element
+const checkbox = document.getElementById("flexSwitchCheckDefault");
+const outsideText = document.getElementById("outsideText");
+const bars = document.querySelectorAll("#bars");
+// Add an event listener to detect changes in the checkbox state
+checkbox.addEventListener("change", function() {
+    // Check if the checkbox is checked
+    if (this.checked) {
+        bars.forEach(function(bar) {
+            bar.style.cssText = "background-color: #4DAAE9 !important;";
+        });
+        outsideText.style.color = "white"
+        document.body.style.backgroundColor = "#302F30";
+    } else {
+        // Set the background color to white
+        bars.forEach(function(bar) {
+            bar.style.cssText = "background-color: white !important;";
+        });
+        outsideText.style.color = "black"
+        document.body.style.backgroundColor = "white";
+    }
+});
+});
+
+
 
 window.onload = loadMovieDetails;
 
